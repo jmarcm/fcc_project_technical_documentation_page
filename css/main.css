@@ -22,7 +22,10 @@ aside {
     }
 
     aside {
+        /* position: -webkit-sticky;
         position: sticky;
+        top: -2px; */
+        position: initial;
     }
     
 }
@@ -64,6 +67,7 @@ aside header,
 
     #nav-bar {
         position: sticky;
+        top: -5px;
     }
 
     #nav-bar ul {
