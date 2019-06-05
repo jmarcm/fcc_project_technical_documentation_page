@@ -87,9 +87,7 @@ aside header,
 
 #main-doc {
     margin-top: 128px;
-    text-align: justify;
-
-    background: yellow;
+    text-align: left;
 }
 
 @media (min-width:768px) {
@@ -101,7 +99,7 @@ aside header,
 }
 
 #main-doc header {
-    margin-top: 15px;
+    margin: 15px 0;
     font-size: 1.5em;
     font-weight: 700;
 }
