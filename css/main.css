@@ -1,3 +1,27 @@
+p {
+    margin: 0 0 0.2em;
+}
+
+.sub-title {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+code {
+    padding: 4px;
+    border-radius: 4px;
+    background: lightgray;
+    font-size: 14px;
+}
+
+p ~ code {
+    display: inline-block;
+    width: calc(100% - 20px);
+    margin: 0.4em 0;
+    padding: 10px;
+}
+
+
 .wrapper {
     /* display: grid;
     grid-template-areas: "aside" "doc";
