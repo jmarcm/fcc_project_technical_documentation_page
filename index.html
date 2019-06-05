@@ -1,0 +1,161 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jmarcm relève un nouveau défi !">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <aside id="aside">
+
+            <nav id="navbar">
+
+                <header>
+                    Console
+                </header>
+
+                <ul>
+                    <li>
+                        <a href="#Introduction" class="nav-link">
+                            Introduction
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#console_assert" class="nav-link">
+                            console assert
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#console_log" class="nav-link">
+                            console log
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#console_trace" class="nav-link">
+                            console trace
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#console_warn" class="nav-link">
+                            console warn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Autres_commandes" class="nav-link">
+                            Autres commandes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Exemples" class="nav-link">
+                            Exemples
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-doc">
+
+            <section id="Introduction" class="main-section">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        L'objet console donne accès à la console de débogage du navigateur (par exemple., la Console Web dans Firefox). Les spécificités de fonctionnement varient d'un navigateur à l'autre, mais il y a tout de même un ensemble de fonctionnalités qui sont fournies de base.
+                    </p>
+                    <p>
+                        La console est accessible de n'importe quel objet global, Window du cadre de navigation, WorkerGlobalScope et ses variantes spécifiques pour les workers. Elle est exposée comme Window.console et peut être référencée simplement comme console. Par exemple :
+                    </p>
+                    <code>console.log("Failed to open the specified link")</code>
+                </article>
+            </section>
+
+            <section id="console_assert" class="main-section">
+                <header>console assert</header>
+                <article>
+                    <p>
+                        Affiche un message et une trace d'appels dans la console si l'assertion en argument est à <code>false</code>.
+                    </p>
+                </article>
+            </section>
+
+            <section id="console_log" class="main-section">
+                <header>console log</header>
+                <article>
+                    <p>
+                        Permet d'afficher des messages dans la console. Vous pouvez utiliser les caractères de substitution et des arguments supplémentaires avec cette méthode.
+                    </p>
+                </article>
+            </section>
+
+            <section id="console_trace" class="main-section">
+                <header>console trace</header>
+                <article>
+                    <p>
+                        Affiche une trace d'appels.
+                    </p>
+                </article>
+            </section>
+
+            <section id="console_warn" class="main-section">
+                <header>console warn</header>   
+                <article>
+                    <p>
+                        Affiche un message d'avertissement. Vous pouvez utiliser les caractères de substitution et des arguments supplémentaires avec cette méthode.
+                    </p>
+                </article>
+            </section>
+
+            <section id="Autres_commandes" class="main-section">
+                <header>Autres commandes</header>
+                <article>
+                    <ul>
+                        <li>Console.clear()</li>
+                        <li>Console.count()</li>
+                        <li>Console.error()</li>
+                        <li>Console.group()</li>
+                        <li>Console.table()</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="Exemples" class="main-section">
+                <header>Exemples</header>
+                <article>
+                    <p class="sub-title">
+                        Afficher plusieurs objets
+                    </p>
+                    <p>
+                        Vous pouvez aussi afficher plusieurs objets, en les séparant par une virgule, comme ceci :
+                    </p>
+                    <code>var car = "Dodge Charger";<br/>var someObject = {str:"Some text", id:5};<br/>console.info("My first car was a", car, ". The object is: ", someObject);
+                    </code>
+                    <p>
+                        L'affichage ressemblera à ceci :
+                    </p>
+                    <code>[09:28:22.711] My first car was a Dodge Charger . The object is:  ({str:"Some text", id:5})</code>
+                    <p class="sub-title">
+                        Donner un style à l'affichage de la console
+                    </p>
+                    <p>
+                        Vous pouvez utiliser l'instruction "%c" pour appliquer du style CSS à l'affichage de la console :
+                    </p>
+                    <code>console.log("This is %cMy stylish message", "color: yellow; font-style: italic; background-color: blue;padding: 2px");</code>
+                </article>
+            </section>
+            
+        </main>
+
+    </div>
+    
+    
+</body>
+</html>
