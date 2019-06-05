@@ -39,17 +39,17 @@ aside {
 
 @media (min-width:768px) {
     .wrapper {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 14em 1fr;
         grid-template-rows: auto;
-        grid-template-areas: "aside doc";
+        grid-template-areas: "aside doc"; */
     }
 
     aside {
         /* position: -webkit-sticky;
         position: sticky;
         top: -2px; */
-        position: initial;
+        width: 200px;
     }
     
 }
@@ -90,8 +90,9 @@ aside header,
     }
 
     #navbar {
-        position: sticky;
-        top: -5px;
+        position: fixed;
+        top: 0;
+        height: 100%;
     }
 
     #navbar ul {
@@ -110,13 +111,14 @@ aside header,
 }
 
 #main-doc {
-    margin-top: 128px;
+    margin-top: 175px;
     text-align: left;
 }
 
 @media (min-width:768px) {
     #main-doc {
         margin-top: 0;
+        margin-left: 187px;
         padding-left: 1em;
         padding-right: 1em;
     }
