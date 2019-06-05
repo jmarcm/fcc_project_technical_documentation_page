@@ -1,0 +1,9 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 14em 1fr;
+    grid-template-areas: "aside doc";
+}
+
+#nav-bar {
+    position: sticky;
+}
